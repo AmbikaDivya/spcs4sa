@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>S4SA</title>
+  </head>
+
+  <body>
+    <h1>Create DB Query Data For List Entry</h1>
+    <form action='/formatdata' method='GET'>
+    <input type = "submit" name = "submit" value = "Submit" />
+    <input type = "reset" name = "reset"  value = "Reset" />
+         Data for DB List:  Enter items (one per each line)<br />
+         <textarea rows = "50" cols = "70" name = "data">
+         </textarea>
+    </form>
+    <br/>
+    <br/>
+    <h1>Remove duplicates</h1>
+    <form action='/removeduplicates' method='GET'>
+         <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+          Remove duplicates:  Enter items (one per each line)<br />
+         <textarea rows = "50" cols = "70" name = "data">
+         </textarea>
+    </form>
+    
+  </body>
+</html>
